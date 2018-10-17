@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin - Dashboard</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+  </head>  
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,  
+	title:{
+		text: " Sales by Year"
+	},
+	axisY: {
+		title: "Units Sold",
+		valueFormatString: "#0,,.",
+		suffix: "mn",
+		stripLines: [{
+			value: 3366500,
+			label: "Average"
+		}]
+	},
+	data: [{
+		yValueFormatString: "#,### Units",
+		xValueFormatString: "YYYY",
+		type: "spline",
+		dataPoints: [
+			{x: new Date(2002, 0), y: 2506000},
+			{x: new Date(2003, 0), y: 2798000},
+			{x: new Date(2004, 0), y: 3386000},
+			{x: new Date(2005, 0), y: 6944000},
+			{x: new Date(2006, 0), y: 6026000},
+			{x: new Date(2007, 0), y: 2394000},
+			{x: new Date(2008, 0), y: 1872000},
+			{x: new Date(2009, 0), y: 2140000},
+			{x: new Date(2010, 0), y: 7289000},
+			{x: new Date(2011, 0), y: 4830000},
+			{x: new Date(2012, 0), y: 2009000},
+			{x: new Date(2013, 0), y: 2840000},
+			{x: new Date(2014, 0), y: 2396000},
+			{x: new Date(2015, 0), y: 1613000},
+			{x: new Date(2016, 0), y: 2821000},
+			{x: new Date(2017, 0), y: 2000000}
+		]
+	}]
+});
+chart.render();
+
+   
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<table width="400">
+<div class="card mb-3">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Keywords</th>
+                      <th>Position</th>
+                      <th>Change</th>
+                      <th>URL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>3D Printing In Construction Market</td>
+                      <td>100+</td>
+                      <td>0</td>
+                      <td>/research-report/asia-compount-</td>
+                    </tr>
+                    <tr>
+                      <td>3D Printing In Construction Market Forecast</td>
+                      <td>18</td>
+                      <td>0</td>
+                      <td>/research-report/asia-compount-</td>
+                    </tr>
+                    <tr>
+                      <td>3D Printing In Construction Market Share</td>
+                      <td>100+</td>
+                      <td>0</td>
+                      <td>/research-report/asia-compount-</td>
+                    </tr>
+                    <tr>
+                      <td>3D Printing In Construction Market Share</td>
+                      <td>34</td>
+                      <td>0</td>
+                      <td>/research-report/asia-compount-</td>
+                    </tr>
+                    <tr>
+                      <td>3D Printing In Construction Market Size</td>
+                      <td>72</td>
+                      <td>-3</td>
+                      <td>/research-report/asia-compount-</td>
+                    </tr>
+                    <tr>
+                      <td>Abrasives Market</td>
+                      <td>12</td>
+                      <td>81</td>
+                      <td>/research-report/asia-compount-</td>
+                    </tr>
+                    <tr>
+                     <td>Abrasives Market Forecast</td>
+                      <td>100+</td>
+                      <td>79</td>
+                      <td>/research-report/asia-compount-</td>
+                    </tr>
+                    <tr>
+                      <td>Abrasives Market Share</td>
+                      <td>43</td>
+                      <td>-5</td>
+                      <td>/research-report/asia-compount-</td>
+                    </tr>
+                   
+                     
+                  </tbody>
+
+</table>
+</body>
+</html>
